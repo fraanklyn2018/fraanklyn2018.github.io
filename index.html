@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" type="text/css" href="profile.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Black+And+White+Picture|Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Black+And+White+Picture|Courgette|Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arapey|Cinzel" rel="stylesheet">
 	<title>My profile</title>
 </head>
 <body>
@@ -16,20 +22,13 @@
  		</div>
  	</div>
  		<nav>
- 			<a href="#"> HOME</a>
- 			<a href="#"> GALLERY</a>
+ 			<a href="index.html"> HOME</a>
+ 			<a href="gallery.html"> GALLERY</a>
  			<a href="#"> LIFESTYLE</a>
  			<a href="#"> ABOUT</a>
- 			<a href="#"> CONTACT</a>
+ 			<a href="contact.html"> CONTACT</a>
  		</nav>
- 	<div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="#" class="google"><i class="fa fa-google"></i></a> 
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-</div>
- 	<div class="container">
+ 	<div class="s-container">
  			<div class="searchbox">
  					<input type="text" name="search" id="search">
  					<button class="searchbtn">
@@ -37,6 +36,39 @@
  					</button>
  			</div>	
  	</div>
+
+ 	<div id="slider" class="carousel slide">
+ 		<ol class="carousel-indicators">
+    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+   	 	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  		</ol>
+ 		<div class="carousel-inner">
+ 			<div class="carousel-item">
+ 				<img src="frank4.jpg"class="slider-img">
+ 			</div>
+ 			<div class="carousel-item active">
+ 				<img src="frank1.jpg"class="slider-img">
+ 			</div>
+ 			<div class="carousel-item">
+ 				<img src="frank8.jpg"class="slider-img">
+ 			</div>
+ 		</div>
+
+ 		<a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+ 				<span class="carousel-control-prev-icon">
+ 				</span>
+ 				<span class="sr-only">Previous</span>
+ 				</a>
+ 				<a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+ 				<span class="carousel-control-next-icon">
+ 				</span>
+ 				<span class="sr-only">Next</span>
+ 				</a>
+ 	</div>
+ 	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
  	<div class="row">
  		<div class="content">
  		<div class="card">
@@ -44,7 +76,7 @@
  				The Nigerian Dream
  			</div>
  			<div class="card-picture"
- 			style="background-image: url('fash.jpg'); background-size: cover;">
+ 			style="background-image: url('dream.png'); background-size: cover;">
  				
  			</div>
  			<div class="card-content">
@@ -70,10 +102,7 @@
  			My name is Franklyn, a Web Designer, Computer Hardware Engineer, Social 
  		Media Blogger,
  		400 Level Computer Science Student, University of Abuja, Nigeria.<br>
- 		I am a believer of God, I live free without sentinment...<a href="#">read more &gt;&gt;</a>
- 			<!-- <div class="meta-footer">
- 				<a href="#">Read More</a>
- 			</div> -->
+ 		I am a believer of God, I live free without sentinment...<a  href="#" class="edit">read more</a>
  	</div>
  			</div>
  	</div>
@@ -86,10 +115,10 @@
  			<div class="second-card-title">
  				The Heaven's Grocery Store
  			</div>
- 				<div class="second-card-picture"><img src="gro.JPG" width="500" height="300">
+ 				<div class="second-card-picture"><img src="shop.webp" width="700" height="300">
  				</div>
  				<div class="second-card-content">
- 					As i was walking down life's highway mmany years ago,
+ 					As i was walking down life's highway many years ago,
  					I came upon a sign that "Heavens Grocery Store" when i
  					go a little closer
  				</div>
@@ -100,15 +129,81 @@
  	</div>
  		<div class="newsletter">
  			<div class="letter-head">
- 				<div class="letter-title">
- 					NEWSLETTER
- 				</div>
  					<div class="letter-content">
- 						Sign up to receive updates and join our subscribers 
+ 						<div class="news"> Newsletter</div>
+ 						<div class="news-text">
+ 						You can follow on twitter with
+ 						 the link
+ 						on the left or
+ 						Sign up to receive updates or join our subscribers 
  						that see what's new with Franklyn.me!
+ 						<div class="email-box">
+ 							<input type="email" name="email" id="email" class="form-control" placeholder="Enter E-mail Adress...">
+ 					</div>
+ 					<button class="button-btn">
+ 					Sign Up
+ 					</button>
  					</div>
  			</div>
  		</div>
  </div>
+</div>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<footer>
+	<div class="footer-row">
+		<div class="col-md-3">
+		<h3><font color="#e0e0e0"><p>&copy; Copyright2018</p></font></h3>
+		<a href="about.html">About Franklyn</a>
+		<br>
+		<a href="contact.html">Contact </a>
+		<br>
+		<a href="allpractice.html">Gallery</a>
+		<br>
+		<a href="#">Lifestyle</a>
+		</div>
+
+		<div class="col-md-3">
+		<h3><font color="#e0e0e0">Motivational and Books</font></h3>
+		<a href="#">Nuggets</a>
+		<br>
+		<a href="#">Quotes of the day</a>
+		<a href="#">Write to Franklyn</a>
+		<a href="#">Get Feedbacks</a>
+		</div>
+
+		<div class="col-md-3">
+		<h3><font color="#e0e0e0">Products</font></h3>
+		<a href="#">Web Design</a>
+		<br>
+		<a href="#">Hardware Engineer</a>
+		<br>
+		<a href="#">ICT Fundamentals</a>
+		<br>
+		<a href="#">Blogging</a>
+		</div>
+
+		<div class="col-md-3">
+		<h3><font color="#e0e0e0">Like Us</font></h3>		
+		<a href="facebook.com"><i class="fa fa-facebook btn btn-primary fa-x" aria-hidden="true"></i></a><br><br>
+		<a href="twitter.com"><i class="fa fa-twitter btn btn-primary fa-x" aria-hidden="true" ></i></a><br><br>
+		<!-- <a href="07030485891"><i class="fa fa-phone btn btn-primary fa-x" aria-hidden="true" ></i></a> -->
+		</div><br><br>
+</div>
+		</footer>
+	
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.js"></script>
+<script>
+	$("#slider").carousel({interval:4000});
+</script>
+
 </body>
 </html>
